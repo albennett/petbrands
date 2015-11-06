@@ -3,7 +3,11 @@
   "version": "0.0.0",
   "homepage": "https://github.com/albennett/petbrands",
   "authors": [
+<<<<<<< HEAD
     "albennett <amyleeannebennett@gmail.com>"
+=======
+    "Tina Wisneski <daydreamer525@rocketmail.com>"
+>>>>>>> pettina
   ],
   "license": "MIT",
   "ignore": [
