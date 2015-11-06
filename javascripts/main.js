@@ -5,10 +5,8 @@ function($, cats, dogs) {
 
 
 
-
-
-
 var listOfCats = function(catList) { //displaying json file of songs
+	
 		
 	for (var i = 0; i <catList.cat_brands.length; i++){
 	  	var catInfo = catList.cat_brands[i];
