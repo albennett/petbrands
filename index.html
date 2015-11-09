@@ -1,23 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="utf-8">
-		<h1>Bow Wow and Little Kitty Delicatessen</h1>
+		<meta charset="utf-8"><h1 class="head">Big Dogs:  Where the Kitties Come to Play. </h1>
+		<link rel="stylesheet" type="text/css" href="styles/style.css">
+   		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
 		<!-- <link rel="stylesheet" type="text/css" href="./styles/main.css">	 -->
 	</head>
 		<body>
+			<div class="container">
+					
 
-			<div>Brands</div>
-			<div>Type/Prices</div>
-          	
+				<table class="nav" border="1" style="width:100%">
+					<thead>
+						<tr class="header">
+							<th class="brands">Brands</th>
+							<th class="type">Type/Prices</th>
+						</tr>
+					</thead>
+					<tbody id="injectionSpotBrand">
+						<tr>
+							<td></td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
 
 
-			<div id="injectionSpotBrand"></div>
+					
+				<div class="image">
+				<img class="srcImage" src="http://www.sophieuliano.com/wp-content/uploads/2010/CatDogEatingWSLarge-300x200.jpg" alt="">
+				<img class="srcImage" src="http://www.ashevillehumane.org/myimages/catg-dog-eating-together.jpg" alt="">
+				<img class="srcImage" src="http://www.cancats.net/wp-content/uploads/2014/08/Dog-and-Cat-food.jpg" alt="">
+				<img class="srcImage" src="http://walpolefeedinc.com/images/iStock_000003160151XSmall.jpg" alt="">
+				</div>
 
-			<div  id="injectionSpotType"></div>
 
-			<script data-main="javascripts/entry" src="lib/bower_components/requirejs/require.js"></script>
+				<!-- div class="nav">
+					<ul class="header" id="">
+				        <li role="" class="brands" id="">Brands</li>
+						<li role="" class="" id="">Breeds</li>
+						<li role="" class="type" id="">Type/Prices</li>
+	          		</ul>
+				</div> -->
+
+
+				<!-- <div id="result">
+					<ul id="injectionSpotBrand">
+					</ul>				
+				</div> -->
+
+				<!-- <div id="">
+					<ul id="injectionSpotBreeds">
+					</ul>				
+				</div> -->
+
+				<!-- <div id="resultType">
+					<ul id="injectionSpotType">
+					</ul>				
+				</div> -->
+
+					<script data-main="javascripts/entry"src="./lib/bower_components/requirejs/require.js"></script>
+			</div>
 		</body>
+
+
+ 
 
 
 
