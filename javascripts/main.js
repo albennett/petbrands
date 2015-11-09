@@ -14,7 +14,7 @@ var listOfCats = function(catList) { //displaying json file of songs
 			for (var k = 0; k <catTypes.volumes.length; k++){
 				var catVolumes = catTypes.volumes[k];
 				// $("#injectionSpotType").append("<div>" + catTypes.type + catVolumes.name + catVolumes.price + "</div>");
-				catVolumesString += (catTypes.type + catVolumes.name + catVolumes.price)
+				catVolumesString += (catTypes.type + " " + catVolumes.name + " " + catVolumes.price + " ")
 				console.log("catVolumesString", catVolumesString)
 				count++
 				console.log(count)
@@ -41,7 +41,7 @@ var listOfDogs = function(dogList) { //displaying json file of songs
 			for (var k = 0; k <dogTypes.volumes.length; k++){
 				var dogVolumes = dogTypes.volumes[k];
 				// $("#injectionSpotType").append("<div>" + catTypes.type + catVolumes.name + catVolumes.price + "</div>");
-				dogVolumesString += (dogTypes.type + dogVolumes.name + dogVolumes.price)
+				dogVolumesString += (dogTypes.type + " " + dogVolumes.name + " " + dogVolumes.price + " ")
 				console.log("dogVolumesString", dogVolumesString)
 				count++
 				console.log(count)
