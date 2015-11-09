@@ -1,0 +1,39 @@
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #333;
+$margin: 0;
+$padding: 0;
+$display: inline-block;
+$font-weight: bold;
+$float: left
+$margin: margin-top;
+
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+  display: $inline-block;
+}
+
+
+.nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li { display: inline-block; }
+
+  a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+  }
+}
+
+.nav {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+}

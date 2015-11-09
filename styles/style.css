@@ -1,0 +1,53 @@
+.head {
+	text-align: center;
+	font-style: oblique;
+	font-weight: bolder;
+	}
+
+.container{
+	font-size: 1em;
+	background-color: #cbc3e0;
+}
+
+
+.nav {
+	background-color: #866fed;
+}
+
+.header {
+	font-size: 2em;
+}
+
+.head {
+	background-color: #e8b6ea;
+}
+
+
+.brands {
+}
+
+.type {
+	background-color: #866fed;	
+}
+
+.image {
+	 width : 20%;
+     height : 100px;
+     border : solid 2px #0f0f0f;
+     display:table;
+     display:table-cell;
+     text-align: center;
+     vertical-align: middle;    
+     }
+ 
+.srcImage {
+	width : 500px;
+    height : 400px;
+    display:inline-block;
+    
+}
+
+
+
+
+
