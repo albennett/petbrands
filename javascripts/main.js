@@ -1,44 +1,20 @@
-define(["jquery", "cats", "dogs"], 
-function($, cats, dogs) { 
+define(["jquery", "cats", "dogs", "hbs"], 
+function($, cats, dogs, hbs) { 
 
 var listOfCats = function(catList) { //displaying json file of songs
-	console.log("smile");
-	count = 0;
-	for (var i = 0; i < catList.cat_brands.length; i++){
-	  	var catInfo = catList.cat_brands[i];
-	  	$("#injectionSpotBrand").append("<p>"  + catInfo.name);
-
-	  	for (var j = 0; j <catInfo.types.length; j++){
-			var catTypes = catInfo.types[j];
-
-			for (var k = 0; k <catTypes.volumes.length; k++){
-				var catVolumes = catTypes.volumes[k];
-				$("#injectionSpotType").append("<div>" + catTypes.type + catVolumes.name + catVolumes.price + "</div>");
-				count++
-				console.log(count)
-			}
-		}
-  	}
-
-			
-	  	
- 	
-  	
-
-		
-};  cats.getJson(listOfCats);
-
-	// var listOfDogs = function(dogList) { //displaying json file of songs
-		
-	// 		$("#").html(songTemplate(dogList));
-		
-	// };
+	require(['hbs!../templates/cat'], function (template){
+		$("#cattable").html(template(catList));	
+	
+	});  cats.getJson(listOfCats);
+};
 
 
-// injectionspotbrand
-// spottype
-
-
+var listOfDogs = function(dogList) { //displaying json file of songs
+	require(['hbs!../templates/dog'], function (template){
+		$("#dogtable").html(template(dogList));	
+	
+	});  dogs.getJson(listOfDogs);
+};
 
 
 

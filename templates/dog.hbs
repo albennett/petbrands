@@ -1,0 +1,21 @@
+ <div>
+      {{#each dog_brands}}
+
+      <table>
+        <tr>
+          <th colspan="5">{{name}}</th>
+        </tr>
+        <tr>
+        {{#each volumes}}
+          <td colspan="1">{{types}}</td>
+        {{/each}}
+        </tr>
+        <tr>
+        {{#each volumes}}
+          <td colspan="1">{{size}}: {{price}}</td>
+        {{/each}}
+        </tr>
+      </table>
+
+      {{/each}}
+</div>
